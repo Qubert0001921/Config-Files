@@ -6,7 +6,6 @@ services:
       - es-net
     ports:
       - 9200:9200
-      - 9300:9300
     environment:
       - node.name=es01
       - cluster.name=docker-cluster

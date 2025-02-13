@@ -1,0 +1,37 @@
+root = true
+
+[*.xaml]
+indent_style = space
+indent_size = 4
+
+[*.cs]
+# Formatting
+csharp_new_line_before_open_brace = none 
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
+csharp_new_line_before_members_in_object_initializers = false
+csharp_new_line_before_members_in_anonymous_types = false
+csharp_new_line_between_query_expression_clauses = false
+
+# Naming Rules
+dotnet_naming_symbols.private_fields.applicable_kinds = field
+dotnet_naming_symbols.private_fields.applicable_accessibilities = private
+
+dotnet_naming_style.underscore.required_prefix = _
+dotnet_naming_style.underscore.capitalization = camel_case
+
+dotnet_naming_rule.private_fields_with_underscore.symbols = private_fields
+dotnet_naming_rule.private_fields_with_underscore.style = underscore
+dotnet_naming_rule.private_fields_with_underscore.severity = error
+
+# Code Rules
+csharp_style_namespace_declarations = file_scoped:error
+# dotnet_diagnostic.IDE0161.severity = error
+
+dotnet_style_qualification_for_field = true
+dotnet_style_qualification_for_property = true
+dotnet_style_qualification_for_event = true
+dotnet_diagnostic.IDE0009.severity = warning
+
+dotnet_diagnostic.IDE0002.severity = warning
